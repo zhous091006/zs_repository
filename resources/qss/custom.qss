@@ -1,0 +1,410 @@
+UiCustomMainWindow {color:red; min-width:100px; min-height:20px;}
+UiCustomMainWindow QFrame#ContainerWidget {background:#f3f3f3;}
+UiCustomMainWindow QFrame#CentralWidget {border:2px solid #3388ff; background:red;}
+
+
+UiCustomMainWindowTopBar {background:#dddddd; border:none; margin:0px 0px 0px 0px; padding:0px 0px 0px 30px; font-size:13px; border-bottom:0px solid #666;}
+UiCustomMainWindowTopBar::item{border:none; color:#333333; margin:0px 0px 0px 0px; padding:5px 9px 5px 9px; min-height:24px;}
+UiCustomMainWindowTopBar::item:selected{background:rgba(0,0,0,20); border-radius:0px;}
+UiCustomMainWindowTopBar::item:disabled{color:#555555;}
+
+UiCustomMainWindowTopBar QLabel#AppLogo{background:transparent;}
+UiCustomMainWindowTopBar QLabel#Version{font-size: 11px; color:#222222;}
+
+
+
+UiMenu {color:#222222; font-size:13px; background:#fff; border:0px solid #ddd; padding:6px 4px 0px 6px; margin:1px 4px 4px 0px; border-radius:0px;}
+
+UiLineLossViewerPage UiMenu {font-size:12px; border:1px solid #ccc;}
+UiAutoUploadPage UiMenu {font-size:12px; border:1px solid #ccc;}
+
+
+
+QFrame#SplitLine {background: #f5f5f5; margin-left:4px; margin-right:4px;}
+
+UiSplitLine {background:#f0f0f0;}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+UiPushButton {background:#007acc; border-radius:0px; font-size:13px; color:#ffffff; padding:3px 4px 4px 4px; border:0px solid #197DDF;}
+UiPushButton:focus {background:#1983E6;}
+UiPushButton:hover {background:#0071BB; color:#f0f0f0;}
+UiPushButton:pressed {background: #1878D6;}
+UiPushButton:disabled {background: #e4e4e4; color:#aaaaaa;}
+UiPushButton::menu-indicator{image:none; width:0px;}
+
+UiPushButton#Icon {border-radius:2px; padding:0px 0px 0px 0px; margin:0px;}
+UiPushButton#Icon {font-family:"Arial"; color:rgba(0,0,0,140); background:transparent; border:none; font-size:16px;}
+UiPushButton#Icon:hover {background:rgba(0,0,0,30); border-radius:2px;}
+UiPushButton#Icon:pressed {background:rgba(0,0,0,40); border-radius:2px;}
+UiPushButton#Icon:disabled {color:rgba(0,0,0,80); background:transparent;}
+
+UiFontIconButton {
+    color:rgba(0,0,0,140); background:transparent; border:none;
+    font-family:"fontello"; font-size:10px; padding:0px 0px 0px 0px; margin:0px;
+}
+UiFontIconButton:hover {background:rgba(0,0,0,30); border-radius:2px;}
+UiFontIconButton:pressed {background:rgba(0,0,0,40); border-radius:2px;}
+UiFontIconButton:disabled {color:rgba(0,0,0,80); background:transparent;}
+
+
+/*-----------------------------------------UiDialogBase------------------------------------------------*/
+UiDialogBase QFrame#CentralWidget {background:#F2F2F2; color:white; border:0px solid #888888; border-radius:0px;}
+UiDialogBase QFrame#CentralWidget[alert=true] {border:0px solid #777777;}
+UiDialogBase QFrame#CentralWidget[alert=false] {border:0px solid #aaaaaa;}
+UiDialogBase QFrame#BodyWidget {background:#ffffff; margin:0px; border-bottom-left-radius:0px; border-bottom-right-radius:0px;}
+
+UiDialogBase UiDialogTitleBar {background:#666; color:#000000; border-top-left-radius:0px; border-top-right-radius:0px;}
+UiDialogBase UiDialogTitleBar[alert=true] {background:#f4f4f4;}
+UiDialogBase UiDialogTitleBar[alert=false] {background:#fefefe;}
+UiDialogBase UiDialogTitleBar QLabel#TitleName {background:transparent; color:#e6444444; font-size:12px;}
+
+
+UiDialogBase QScrollArea QFrame#Container{background: transparent;}
+
+
+/*----------------------------------------- UiMessageBox ------------------------------------------------*/
+UiMessageBox QFrame#ButtonArea {background:#f8f8f8;}
+
+UiMessageBox QLabel#Icon[level="warning"] {image: url('resources/images/widget/message_box/warning_32.svg');}
+UiMessageBox QLabel#Icon[level="information"] {image: url('resources/images/widget/message_box/info_32.svg');}
+UiMessageBox QLabel#Icon[level="tip"] {image: url('resources/images/widget/message_box/info_32.svg');}
+UiMessageBox QLabel#Icon[level="question"] {image: url('resources/images/widget/message_box/question_96.png');}
+UiMessageBox QLabel#Icon[level="error"] {image: url('resources/images/widget/message_box/error_32.svg');}
+
+UiMessageBox UiPushButton {background:#aaaaaa; border:0px solid #e4e4e4; border-radius:0px; color:#000000;}
+UiMessageBox UiPushButton:hover {border:1px solid #000000; background:#aaaaaa; color:#000000;}
+UiMessageBox UiPushButton:focus {background:#1983E6; color:white;}
+UiMessageBox UiPushButton:pressed {background: #1878D6; border:1px solid #000000;}
+UiMessageBox UiPushButton:disabled {background: #cccccc; color:#888888;}
+
+
+
+/*----------------------------------------- UiTaskMessageBox ------------------------------------------------*/
+UiTaskMessageBox UiDialogTitleBar {background:#3777ED;color:white;}
+UiTaskMessageBox UiDialogTitleBar QLabel#TitleName {color:white;}
+UiTaskMessageBox QFrame#BodyWidget {background:#3777ED;}
+UiTaskMessageBox QFrame#BodyWidget QLabel {color:white;}
+
+UiTaskMessageBox UiPushButton {background:#f5f5f5; border-radius:2px; color:#000000; padding:4px 4px 4px 4px;}
+UiTaskMessageBox UiPushButton:focus {background:#eeeeee; border:1px solid #000000;}
+UiTaskMessageBox UiPushButton:hover {background:#eeeeee; color:#000000;}
+UiTaskMessageBox UiPushButton:pressed {background: #eeeeee; border:1px solid #000000;}
+UiTaskMessageBox UiPushButton:disabled {background: #cccccc; color:#888888;}
+
+
+QToolButton#CloseBtn {border-radius: 0px; image: url("resource/images/close_white.svg");}
+QToolButton#CloseBtn:hover {background:#FF605A;}
+QToolButton#CloseBtn:pressed {background:#ff4444;}
+
+QToolButton#MaxBtn {color:#333333; background:transparent; border-radius: 0px; image: url("resource/images/max_white.svg");}
+QToolButton#MaxBtn:hover {background:rgba(0,0,0,30);}
+QToolButton#MaxBtn:pressed {background:rgba(0,0,0,50);}
+QToolButton#MaxBtn[WindowMaxState=true] {image: url("resource/images/normal_white.svg");}
+QToolButton#MaxBtn[WindowMaxState=false] {image: url("resource/images/max_white.svg");}
+
+QToolButton#MinBtn {color:#333333; background:transparent; border-radius: 0px; image: url("resource/images/min_white.svg");}
+QToolButton#MinBtn:hover {background:rgba(0,0,0,30);}
+QToolButton#MinBtn:pressed {background:rgba(0,0,0,50);}
+
+
+UiTaskQueueWidget{
+    background:white;
+}
+
+
+
+UiScrollArea {background:transparent;}
+
+UiVerticalScrollFrame QFrame {background:transparent;}
+
+UiDrawerBox QFrame#Container{background:transparent;}
+
+
+/* ------------------ UiGroupBox ---------------- */
+UiGroupBox {background:transparent;}
+UiGroupBox QFrame#TitleBar {background:#cccccc;}
+UiGroupBox QFrame#TitleBar QLabel {color:#ffffff; background:transparent; font:normal 12px;}
+UiGroupBox QGroupBox#Body {background:#ffffff; border-radius:0px; font-size:12px;}
+
+UiGroupBox#Sub {margin:6px; border:1px solid #e0e0e0;}
+UiGroupBox#Sub QFrame#TitleBar {background:#fafafa; border-bottom:1px solid #e8e8e8;}
+UiGroupBox#Sub QFrame#TitleBar QLabel {color:#444444; font:normal 12px;}
+UiGroupBox#Sub QGroupBox#Body {background:#ffffff; border-bottom:0px solid #e0e0e0; border-radius:0px;}
+
+UiGroupBox {margin:6px; border:none; border-bottom:0px solid #666; margin-bottom:8px;}
+UiGroupBox QFrame#TitleBar {background:#ffffff; border-bottom:1px solid #e8e8e8;}
+UiGroupBox QFrame#TitleBar QLabel {color:#444444; font:normal 12px;}
+UiGroupBox QGroupBox#Body {background:#ffffff; border-bottom:0px solid #e0e0e0; border-radius:0px; margin:6px;}
+
+UiGroupBox#Sub {margin:6px; border:none; border-bottom:0px solid #666; margin-bottom:8px;}
+UiGroupBox#Sub QFrame#TitleBar {background:#ffffff; border-bottom:1px solid #e8e8e8;}
+UiGroupBox#Sub QFrame#TitleBar QLabel {color:#444444; font:normal 12px;}
+UiGroupBox#Sub QGroupBox#Body {background:#ffffff; border-bottom:0px solid #e0e0e0; border-radius:0px; margin:6px;}
+
+/* ------------------ UiTabWidget & UiTabBar ---------------- */
+UiTabWidget {background: transparent;}
+UiTabWidget QFrame#Body {background: #ffffff; border-radius: 0px; font-size: 12px; border:none;}
+
+UiTabBar {background:#f3f3f3; border-bottom:0px solid #aaa; padding:0px 0px -8px 0px;}
+UiTabBar QScrollBar:horizontal {padding-top:1px;}
+UiTabBar QScrollBar:horizontal:hover {padding-top:1px;}
+UiTabBar QScrollBar::handle:horizontal {background:#22000000;}
+UiTabBar QScrollBar::handle:horizontal:hover {background:#44000000;}
+UiTabBar QScrollBar::handle:horizontal:pressed {background:#88000000;}
+
+UiTab {border:none; font:normal 13px; padding: 3px 20px 3px 14px; border-right:1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f3f3f3 ,stop:1 #f3f3f3); text-align:center;}
+/*UiTab[selected=true] {background:#ffffff; color:#000000; padding: 3px 20px 0px 20px; border-bottom:1px solid #eee;}*/
+UiTab[selected=true] {background:#ffffff; color:#333; border-bottom:0px solid #3485D6;}
+UiTab[selected=false] {background:#ececec; color:#b3333333; border-bottom:0px solid #aaa;}
+UiTab[closeable=true] {padding-right: 28px;}
+UiTab:hover[selected=false] {background:#f6f6f6; color:#333;}
+
+UiTab UiFontIconButton#CloseBtn{background:transparent; padding:0px 0px 2px 0px; margin:0px 0px 0px 0px; font-size:8px; color:#999999;}
+UiTab UiFontIconButton#CloseBtn:hover {background:#FF334E; border-radius: 2px; color:#eeeeee;}
+UiTab UiFontIconButton#CloseBtn:pressed {background:#F02F49; border-radius: 2px; color:#eeeeee;}
+
+/* ------------------ UiTaskHeaderWidget ---------------- */
+UiTaskHeaderWidget QSplitter::handle {background:#e0e0e0;}
+
+UiTaskListWidget {background:white; border:none; padding:0 0 0 0; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;}
+UiTaskListWidget::item {height:28px; padding-left:0px; border:none;}
+UiTaskListWidget::item:selected {background:transparent; border:none; border-width:0;}
+UiTaskListWidget::item:hover {background:transparent; border:none;}
+
+UiTaskListItem {background:transparent; margin-left:0px; margin-right:0px;}
+UiTaskListItem[active=true] {border-left:2px solid #0096F3; margin:2px 0px 2px 0px;}
+UiTaskListItem[active=false] {border:none;}
+UiTaskListItem:hover {background:#f8f8f8; border-radius:0px; margin:0px 0px 0px 0px;}
+
+UiPopupFilterDialog CustomCheckBox{padding-left:4px;}
+UiPopupFilterDialog QCheckBox#CheckAll{padding-left:5px;}
+
+
+
+UiTaskGroupWidget UiTaskSchedulingArea {background:white;}
+
+
+
+UiTextBrowser {background:transparent; font-size: 12px; border:none; padding:1px 1px 1px 1px; margin:1px 1px 1px 1px;}
+
+
+UiLineLossMeasSubPage {}
+UiLineLossMeasSubPage UiSubPageHeader {background:#ffffff;}
+UiLineLossMeasSubPage UiSubPageHeader QLabel{color: #555555; font: normal 12px;}
+
+UiStackedItemPageHeader {background:#fff; border-bottom:1px solid #e0e0e0;}
+UiStackedItemPageHeader QLabel {color: #555555; font: normal 12px;}
+
+
+
+UiWaitingDisplayWidget {padding:0px 0px 0px 0px; background:transparent;}
+UiWaitingDisplayWidget QFrame#GifBackground {background:#ffffff; border-radius:4px;}
+
+
+
+UiTipsBox QFrame#Container {background: transparent;}
+
+UiApolloVersionBlock QLabel#InformationLabel {color:#282828;}
+
+UiCsvBrowser {background: #ffffff;font-family: "Consolas"; border:none;}
+
+
+
+UiToolBarButton {background:transparent; font-size:10px; border:none; padding:3px 8px 3px 8px; color:#333;}
+UiToolBarButton:hover {background:#10000000;}
+UiToolBarButton:checked {background:#20000000; color:#333;}
+UiToolBarButton[PluggedToolBarArea="1"] {margin-bottom:0px;} /* left */
+UiToolBarButton[PluggedToolBarArea="2"] {margin-bottom:0px;} /* right */
+UiToolBarButton[PluggedToolBarArea="4"] {margin-bottom:0px;} /* top */
+UiToolBarButton[PluggedToolBarArea="8"] {margin:0px;} /* bottom */
+UiToolBarButton:checked[PluggedToolBarArea="1"] {}
+UiToolBarButton:checked[PluggedToolBarArea="2"] {}
+UiToolBarButton:checked[PluggedToolBarArea="4"] {}
+UiToolBarButton:checked[PluggedToolBarArea="8"] {}
+
+
+
+QWidgetAction {padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;}
+
+
+UiDockWidget#Information {background:#fff;}
+UiDockWidget#TaskRunningStatus {background:#fff;}
+
+UiDockWidgetTitle {background:#f3f3f3; font-size:10px; padding:0px 6px 0px 6px; border-bottom:0px solid #666;}
+UiDockWidgetTitle QLabel {font:normal 11px; color:#555; padding:0px 0px 0px 0px;}
+UiDockWidgetBody {background:#f3f3f3; padding:0px 0px 0px 0px;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * File Name: ui_task_running_status_area.py
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+UiTaskRunningStatusTitle {background:#f6f6f6; border-top:0px solid #eee;}
+UiTaskRunningStatusBody {background:#fcfcfc;}
+UiTaskRunningStatusBody TaskCtrlBar {background:#f9f9f9; border-right:0px solid #666;}
+UiTaskRunningStatusBody TaskCtrlBar UiFontIconButton#Resume {color:#499C54; font-size:10px;}
+UiTaskRunningStatusBody TaskCtrlBar UiFontIconButton#Resume:disabled {color:rgba(0,0,0,80);}
+UiTaskRunningStatusBody TaskCtrlBar UiFontIconButton#Stop {color:#E4605C; font-size:10px;}
+UiTaskRunningStatusBody TaskCtrlBar UiFontIconButton#Stop:disabled {color:rgba(0,0,0,80);}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * File Name: ui_information_area.py
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+UiInformationTitle {background:#fff;}
+UiInformationBody {background:#fff;}
+
+UiWorkArea {background:#ffffff;}
+
+/* ------------------ UiDeviceItem ---------------- */
+UiDeviceItem {
+    background:transparent; border:0px solid #e8e8e8; border-radius:0px;
+    border-bottom:0px solid #eeeeee; margin:0px 0px 0px 0px; padding:0px 6px 0px 6px;
+}
+UiDeviceItem:hover {background:#0a000000; border-radius:0px;}
+UiDeviceItem:disabled {background:#aaaaaa;}
+
+UiDeviceItem QLabel#DeviceName {font:normal 12px; color:#444;}
+UiDeviceItem QLabel#DeviceName:disabled {color:#888888;}
+
+UiDeviceItem QLabel#Tags {font:normal 11px; color:#FF9900; background:#fff; border-radius:3px; padding:0px 2px 0px 2px; border:0px solid #ddd;}
+UiDeviceItem QLabel#Tags[active=true] {background:#fff;}
+UiDeviceItem QLabel#Tags:disabled {background:#dddddd; color:#888888;}
+
+UiDeviceItem QLabel#Tips {font: normal 11px; color:#888888;}
+UiDeviceItem QLabel#Tips:disabled {color:#888888;}
+
+UiDeviceItem UiToolButton#DeviceLogo {background:#33bbbbbb; border-radius:0px;}
+
+
+/* ------------------ UiDeviceBox ---------------- */
+UiDeviceBox UiPushButton#UpdateConnection {background:#f5f5f5; border:1px solid #555555; color:#111111;}
+UiDeviceBox UiPushButton#UpdateConnection:hover {background:#f0f0f0;}
+
+/* ------------------ UiTaskToolBar ---------------- */
+UiTaskToolBar {background:#fff; border-bottom:1px solid #e0e0e0; padding:0px 8px 0px 8px;}
+
+UiTaskToolBar QFrame#SplitLine {background: #dddddd;}
+
+UiTaskToolBar UiPushButton#Icon {font-family:"Arial"; color:rgba(0,0,0,140); background:transparent; border:none; font-size: 12px; padding:0px 0px 2px 0px;}
+UiTaskToolBar UiPushButton#Locate {font-family:"Arial"; color:rgba(0,0,0,140); background:transparent; border:none; font-size: 18px; padding:-2px 0px 2px 0px;}
+UiTaskToolBar UiPushButton#Reload {font-family:"Arial"; color:rgba(0,0,0,140); background:transparent; border:none; font-size: 14px; padding:0px 0px 2px 0px;}
+UiTaskToolBar UiPushButton#Icon:hover,
+UiTaskToolBar UiPushButton#Locate:hover,
+UiTaskToolBar UiPushButton#Reload:hover {background:rgba(0,0,0,30); border-radius:2px;}
+UiTaskToolBar UiPushButton#Icon:pressed,
+UiTaskToolBar UiPushButton#Locate:pressed,
+UiTaskToolBar UiPushButton#Reload:pressed{background:rgba(0,0,0,40); border-radius:2px;}
+UiTaskToolBar UiPushButton#Icon:disabled,
+UiTaskToolBar UiPushButton#Locate:disabled,
+UiTaskToolBar UiPushButton#Reload:disabled {color:rgba(0,0,0,80); background:transparent;}
+
+UiTaskToolBar UiFontIconButton#Folder {color:#DE7E22; font-size:10px;}
+UiTaskToolBar UiFontIconButton#Folder:disabled {color:rgba(0,0,0,80);}
+
+UiTaskToolBar UiFontIconButton#Start {color:#499C54; font-size:10px;}
+UiTaskToolBar UiFontIconButton#Start:disabled {color:rgba(0,0,0,80);}
+UiTaskToolBar UiFontIconButton#Stop {color:#E4605C; font-size:10px;}
+UiTaskToolBar UiFontIconButton#Stop:disabled {color:rgba(0,0,0,80);}
+
+/* ------------------ UiTaskQueueWidget ---------------- */
+UiTaskQueueWidget {background:#ffffff; border-bottom:0px solid #e0e0e0; padding:0px 0px 0px 0px;}
+
+/* ------------------ UiTaskItemWidget ---------------- */
+UiTaskItemWidget {background:#ffffff; border-bottom:1px solid #f6f6f6; padding:6px 8px 6px 8px;}
+UiTaskItemWidget[active=true] {border-left:0px solid #0096F3; background:#fafafa;}
+UiTaskItemWidget[active=false] {border-bottom:1px solid #f2f2f2;}
+UiTaskItemWidget:hover {background:#f6f6f6;}
+
+UiTaskItemWidget QLabel#TaskNameLabel {color:#222222; font:normal 12px;}
+UiTaskItemWidget QLabel#TaskParamLabel {color:#444444; font:normal 12px;}
+
+UiTaskItemWidget QProgressBar#TaskItemProgressBar{background:#cfcfcf; border:0px solid #ffffff; border-radius:0px; margin: 6px 4px 6px 4px;}
+UiTaskItemWidget QProgressBar#TaskItemProgressBar::chunk{background:#4FB200; border-radius:0px;}
+UiTaskItemWidget QLabel#TaskItemProgressLabel {color:#444444; font:normal 12px;}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * File Name: ui_window_tools.py
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+UiWindowTopRightTool {background:transparent; padding:0px; margin:0px;}
+
+UiWindowTopRightTool UiFontIconButton#CloseBtn {border-radius: 0px; color:#666;}
+UiWindowTopRightTool UiFontIconButton#CloseBtn:hover {background:#FF605A; color:#eeeeee;}
+UiWindowTopRightTool UiFontIconButton#CloseBtn:pressed {background:#ff4444;}
+
+UiWindowTopRightTool UiFontIconButton#MaxBtn {color:#666; background:transparent; border-radius: 0px; font-size:11px;}
+UiWindowTopRightTool UiFontIconButton#MaxBtn:hover {background:rgba(0,0,0,30);}
+UiWindowTopRightTool UiFontIconButton#MaxBtn:pressed {background:rgba(0,0,0,50);}
+UiWindowTopRightTool UiFontIconButton#MaxBtn[WindowMaxState=true] {}
+UiWindowTopRightTool UiFontIconButton#MaxBtn[WindowMaxState=false] {}
+
+UiWindowTopRightTool UiFontIconButton#MinBtn {color:#666; background:transparent; border-radius: 0px;}
+UiWindowTopRightTool UiFontIconButton#MinBtn:hover {background:rgba(0,0,0,30);}
+UiWindowTopRightTool UiFontIconButton#MinBtn:pressed {background:rgba(0,0,0,50);}
+
+
+
+UiDialogBase UiWindowTopRightTool UiFontIconButton#CloseBtn {font-size:9px; color:#666; padding:0px 0px 0px 1px;}
+UiDialogBase UiWindowTopRightTool UiFontIconButton#MaxBtn {font-size:9px; color:#666;}
+UiDialogBase UiWindowTopRightTool UiFontIconButton#MinBtn {font-size:9px; color:#666;}
+
+
+UiDialogAbout QPushButton#Logo {
+    font-family:"Calibri";
+    background:transparent; border:1px solid #ffffff; font:bold 40px; color:#555555;
+    padding:0px 12px 0px 0px;
+}
+UiDialogAbout QLabel#Version {background:transparent; border:1px solid #ffffff; font:normal 15px; color:#555555; padding:0px 0px 0px 0px;}
+UiDialogAbout QLabel#Copyright {background:transparent; border:1px solid #ffffff; font:normal 11px; color:#555555; padding:0px 0px 0px 0px;}
+
+
+/* * * * * * * * * * * * * * * 账户登录界面 * * * * * * * * * * * * * * */
+UiDialogAccountLogin QPushButton#Logo {
+    font-family:"Calibri";
+    background:transparent; border:0px solid #ffffff; font:bold 40px; color:#555555;
+    padding:0px 12px 0px -24px;
+}
+UiDialogAccountLogin QLabel#Version {font-family:"Calibri, Microsoft YaHei"; background:transparent; border:1px solid #ffffff; font:normal 12px; color:#555555; padding:0px 0px 0px 0px;}
+UiDialogAccountLogin UiLabel#Title {font:12px; color:#444;}
+UiDialogAccountLogin UiLineEdit#Username {font:normal 13px; color:#333; padding:0px 0px 2px 0px;}
+UiDialogAccountLogin UiLineEdit#Password {font-family:"Calibri, Microsoft YaHei"; font:normal 13px; color:#555; padding:0px 0px 2px 0px;}
+UiDialogAccountLogin UiPushButton#Login {border-radius:0px;}
+UiDialogAccountLogin UiFontIconButton#Advance {color:#777; background:transparent; border-radius: 0px; font:normal 11px;}
+UiDialogAccountLogin UiFontIconButton#Advance:hover {background:rgba(0,0,0,30);}
+UiDialogAccountLogin UiFontIconButton#Advance:pressed {background:rgba(0,0,0,50);}
+
+/* * * * * * * * * * * * * * * 账户信息界面 * * * * * * * * * * * * * * */
+UiDialogAccountInfo UiPushButton#Avatar {background:#ccc; border-radius:24px; font:24px;}
+UiDialogAccountInfo UiLabel#Username {font:16px;}
+UiDialogAccountInfo UiLabel#Character {font:14px;}
+
+
+
+UiTaskProgressPlotWidget {background:transparent; border-radius:3px;}
+UiTaskProgressPlot {background:transparent;}
+
+UiVnaSegmentDataTable UiPushButton#Icon {color:#999999;}
+UiVnaSegmentDataTable UiPushButton#Icon:hover {color:#999999;}
+
+
+UiPythonConsolePage UiTabWidget {border:1px solid #f3f3f3;}
+UiScpiCommunicationPage UiTabWidget {border:1px solid #dddddd;}
+UiPythonCodeEditor {border:none; font-family:"Consolas"; font-size:14px;}
+
+
+UiAutoUploadPage QHeaderView {background:#ffffff;}
+UiAutoUploadPage QHeaderView::section {height:18px; background:#ffffff; padding:2px 0px 0px 2px;}
+
+
+UiLineLossViewerPage QHeaderView {background:#ffffff;}
+UiLineLossViewerPage QHeaderView::section {height:18px; background:#ffffff; padding:2px 0px 0px 2px;}
+UiLineLossViewerPage QLabel#RootPath {padding:0px 4px 0px 4px; border-bottom:0px solid #e0e0e0; background:#1878D6; color:#eee;}
+
+
+UiMessageInfoWidget {font:normal 13px; padding:0px 4px 0px 4px;}
+
+UiAccountBox {}
+UiAccountBox UiPushButton#UserAvatar {background:#33000000; font:13px; color:#444; border-radius:0px; padding:0px 0px 0px 0px;}
+UiAccountBox UiPushButton#Username {background:#ee007acc; color:#fff; font:12px; border-radius:0px; text-align:center; padding:0px 6px 2px 6px;}
+
+UiTaskInfoBox {background:#7c73e6; border-radius:2px; padding:2px 4px 2px 4px;}
+UiTaskInfoBox UiLabel {font:12px; padding:1px 0px 3px 0px; color:#eee;}
+UiTaskInfoBox UiFontIconButton {font:8px; color:#eee; margin:2px 2px 2px 2px; padding:0px 0px 2px 0px;}
