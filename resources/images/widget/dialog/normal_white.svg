@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="
+M0,7
+h25
+v25
+h-25
+v-22
+h3
+v19
+h19
+v-19
+h-22
+Z
+M7,0
+h25
+v25
+h-7
+v-3h4
+v-19
+h-19
+v4
+h-3
+Z" fill="#fff"/>
+</svg>

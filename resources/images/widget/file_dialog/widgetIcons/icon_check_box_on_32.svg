@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="icon_check_box">
+    <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" stroke="none" />
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" transform="translate(3 3)" id="Rectangle" fill="#EEEEEE" stroke="none" />
+    <g id="Group" transform="translate(1 1)">
+      <path d="M2.53553 6.00001L0 8.53554L9 17.5355L24 2.53554L21.4645 -2.21476e-07L8.99999 12.4645L2.53553 6.00001L2.53553 6.00001Z" transform="translate(3.000001 6.464459)" id="Rectangle-2-Difference" fill="#444444" fill-rule="evenodd" stroke="none" />
+      <path d="M30 0L0 0L0 30L30 30L30 0ZM28 2L2 2L2 28L28 28L28 2Z" id="Rectangle-Difference" fill="#222222" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

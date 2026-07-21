@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="icon_check_box">
+    <path d="M0 0L32 0L32 32L0 32L0 0Z" id="Background" fill="none" stroke="none" />
+    <path d="M0 0L26 0L26 26L0 26L0 0Z" transform="translate(3 3)" id="白色背景" fill="#EEEEEE" stroke="none" />
+    <path d="M0 0L19 0L19 19L0 19L0 0Z" transform="translate(6.5 6.5)" id="PartiallyChecked-2" fill="#222222" stroke="none" />
+    <g id="Group" transform="translate(1 1)">
+      <path d="M30 0L0 0L0 30L30 30L30 0ZM28 2L2 2L2 28L28 28L28 2Z" id="border" fill="#222222" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
