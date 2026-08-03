@@ -192,6 +192,9 @@ class UiDialogBase(QDialog):
     def set_max_btn_visible(self, visible: bool):
         self.top_right_tool.set_max_btn_visible(visible)
 
+    def set_close_btn_visible(self, visible: bool):
+        self.top_right_tool.set_close_btn_visible(visible)
+
     def set_waiting_state(self, flag: bool):
         if self.__being_waiting_state != flag:
             self.__being_waiting_state = flag
