@@ -1,0 +1,10 @@
+class LibChar:
+    ROCKET = "🚀"
+    SMILING_FACE = "😊"
+    FILE = "📄"
+    EDIT_FILE = "📝"
+    EYE = "👁"
+    UP = "🔼"
+    DOWN = "🔽"
+    CALENDAR = "📅"
+    SMALL_BELL = "🔔"
