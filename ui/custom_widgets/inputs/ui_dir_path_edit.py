@@ -22,7 +22,7 @@ class UiDirPathEdit(QWidget):
         self.file_path_edit.set_validity_check(UiLineEdit.CHECK_DIR)
 
         # self.file_path_select_btn = UiPushButton(tr("Select..."), self)
-        self.file_path_select_btn = UiPushButton(tr("Select..."), self)
+        self.file_path_select_btn = UiPushButton(("Select..."), self)
         self.file_path_select_btn.setMinimumWidth(100)
 
         h_layout = QHBoxLayout()
